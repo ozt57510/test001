@@ -1,6 +1,7 @@
+"""General file with run project"""
 
 def say() -> str:
-    """tst function.
+    """First function.
 
     Returns:
         str: Hello world
@@ -8,7 +9,7 @@ def say() -> str:
     return "Hello world"
 
 
-def hello_name(name: str = "User") -> str:
+def hello_name(user_name: str = "User") -> str:
     """Hello.
 
     Args:
@@ -17,10 +18,4 @@ def hello_name(name: str = "User") -> str:
     Returns:
         str: Hello {user name}
     """
-    return f"Hello {name}"
-
-
-if __name__ == "__main__":
-    print(say())
-    name = input("What is your name? - ")
-    print(hello_name(name))
+    return f"Hello {user_name}"
